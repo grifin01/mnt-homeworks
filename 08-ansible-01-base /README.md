@@ -9,9 +9,22 @@
 ## Основная часть
 
 1. Попробуйте запустить playbook на окружении из `test.yml`, зафиксируйте значение, которое имеет факт `some_fact` для указанного хоста при выполнении playbook.
+
+![image](https://github.com/grifin01/mnt-homeworks/assets/111656372/ee909aad-7dde-4616-ae4f-8d3e6f5b9554)
+
 2. Найдите файл с переменными (group_vars), в котором задаётся найденное в первом пункте значение, и поменяйте его на `all default fact`.
+
+![image](https://github.com/grifin01/mnt-homeworks/assets/111656372/d468443b-7df8-4b99-8962-d5d0ee07bc7e)
+
+
 3. Воспользуйтесь подготовленным (используется `docker`) или создайте собственное окружение для проведения дальнейших испытаний.
+
+![image](https://github.com/grifin01/mnt-homeworks/assets/111656372/e3846d90-04a6-4946-87a2-bd0f490418dc)
+
 4. Проведите запуск playbook на окружении из `prod.yml`. Зафиксируйте полученные значения `some_fact` для каждого из `managed host`.
+
+![image](https://github.com/grifin01/mnt-homeworks/assets/111656372/ef9307bd-ae3b-4bb7-9433-a61ba761fab1)
+
 5. Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
 6.  Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
 7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
